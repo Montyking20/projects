@@ -1,0 +1,21 @@
+body {
+    background-color: beige;
+}
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 10px solid darkblue;
+    background-color: lightblue;
+}
+
+section{
+    background-color: blue;
+}
+.example-box {
+    /* Shortcut method sets top and bottom padding to 20px and left and right to 40px */
+    padding: 20px 40px;
+
+#fixed-header {  
+    position: fixed
+    ;  
+}
