@@ -1,21 +1,132 @@
+* {
+    margin:0;
+    padding:0;  
+  }
+  
+
 body {
     background-color: beige;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 header {
-    height: 100px;
+    text-align: center;
+    height: 75px;
     width: 100%;
-    border-bottom: 10px solid darkblue;
+    position: fixed;
     background-color: lightblue;
+    border-bottom: 7px solid darkblue;
+    z-index: 2;
+ }
+ section{
+     text-align: center;
+ }
+form{
+    display: block;
+    margin: auto;
+    width: 500px;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+li {
+  display: block;
+  padding: 0px 5px;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+}
+label{
+    display: inline-block;
+}
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 250px;
+} 
+figure{
+    margin: 40px;
 }
 
-section{
-    background-color: blue;
+h1,h2 {
+    margin: 20px;
 }
-.example-box {
-    /* Shortcut method sets top and bottom padding to 20px and left and right to 40px */
-    padding: 20px 40px;
 
-#fixed-header {  
-    position: fixed
-    ;  
+main{
+    padding: 60px;
 }
+
+img {
+    border: 7px solid black;
+    padding: 20px;
+    background-color: lightslategray;
+    margin: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+footer {
+    height: 75px;
+    width: 100%;
+    background-color: lightblue;
+    border-top: 7px solid darkblue; 
+    
+     
+}
+
+
+/*Class Selectors */
+
+.title{  
+    color: brown;  
+    text-align: center;
+   
+}
+.text{
+    text-align: right;
+}
+.center{
+    text-align: center;
+
+}
+.footer{
+    vertical-align: bottom;
+    text-align: center;
+}
+.sidenav {
+    height: 99%;
+    width: 160px;
+    position:absolute ;
+    z-index: 1;
+    top: 80;
+    left: 0;
+    background-color: darkblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

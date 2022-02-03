@@ -1,0 +1,80 @@
+body{
+    background-color: #344b4b;
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+header span {
+    color: #d982b5;
+    font-weight: bolder;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+header p {
+    color: white;
+    font-size: 20;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;  
+}
+
+
+
+/* Class*/
+
+.card{
+    width: 400px;
+    padding: 50px;
+    border: 3px;
+    border-style: dashed;
+    border-color:rgb(255, 255, 255);
+    margin: 50px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.snippet{
+    padding: 5px 10px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px;
+    position: absolute;
+    top: -30px;
+    left: center;
+    background-color:rgb(60, 80, 100);
+    text-align: center;
+    width: 350px;
+}  
+.card p {
+    padding: 10px;
+    margin: 0px 10px 10px;
+    color:rgb(170, 15, 200);
+}
+
+.card pre{
+    background-color: #c99bdb;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    color: #ffffff;
+    user-select: all;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
